@@ -2,6 +2,7 @@
 
 📅 **Data Coverage**: 105,000+ transactional process logs  
 💻 **Interactive Portal**: [Explore Live Dashboard (GitHub Pages)](https://girishshenoy16.github.io/business-process-optimization-dashboard/dashboard/)
+
 📂 **Executive Deliverable**: [Strategic Process Improvement Report (Markdown)](reports/business_analysis_report.md)
 
 ---
