@@ -157,3 +157,51 @@ graph LR
 2. **DO**: Execute the RPA tool config, API integrations, and new shift rosters.
 3. **CHECK**: Review the **ProcessOptima Web Dashboard** weekly. Slicers must be utilized to audit specific employee queues, monitoring for new cycle time spikes.
 4. **ACT**: Standardize automated processes that achieve target SLA values. For processes failing to meet goals, trigger a new 5 Whys session to isolate the source of friction.
+
+---
+
+## 8. Important Metrics Catalog
+
+An understanding of the operational metrics used in this study is essential for auditing process flows:
+
+1.  **Process Efficiency %**: Represents how close actual performance cycle time is to standard targets. It is capped at 100% per log to prevent outliers from inflating efficiency averages.
+2.  **SLA Achievement %**: The percentage ratio of tasks completed within customer SLA targets relative to total cases completed. Measures speed compliance.
+3.  **Productivity %**: Evaluates operator throughput output. Calculated as `Actual Tasks Completed / Standard Tasks expected * 100`.
+4.  **Error Rate %**: The percentage of tasks that completed with errors relative to total task volumes. Measures quality control.
+5.  **Rework Rate %**: The percentage of tasks requiring corrective rework relative to total task volumes. Measures waste.
+6.  **Total Process Cost**: The cumulative expense of processing task volume (base unit cost * volume) plus rework penalties. Measures financial scale.
+7.  **Cost per Task**: The unit processing cost calculated as `Total Process Cost / Tasks Completed`. Measures unit cost efficiency.
+8.  **Average Cycle Time**: The average lead time required to complete a process workflow from start to end state (measured in hours).
+9.  **Task Completion Rate %**: The ratio of completed tasks to total transactions started. Evaluates operational capacity.
+10. **Customer Complaint Rate %**: The percentage of transactions that resulted in customer dispute claims or complaints. Measures customer friction.
+
+---
+
+## 9. Diagnostic Identification Guide
+
+Use this step-by-step diagnostic guide to locate operational bottlenecks and issues on the interactive dashboard:
+
+*   **Bottlenecks**: Check the **Department Performance horizontal bar chart** on the dashboard. Locate department blocks where the `Actual Cycle Time` bar exceeds `Standard Cycle Time` by >20% (e.g., Customer Onboarding).
+*   **High-Cost Areas**: Check the **Cost Contribution donut chart**. The process category capturing the largest percentage slice represents your high-cost area.
+*   **Low-Productivity Departments**: Filter by Department and check the **Productivity KPI card**. Any department showing a value under the 90% benchmark has productivity gaps.
+*   **High-Error Processes**: Scan the data table on the dashboard for the `Error Rate` column. Processes exceeding 3% errors require training or automated templates.
+*   **SLA Violations**: Check the **SLA Achievement KPI card** or filter for `SLA Achieved = No` to see the count of delayed onboarding or support files.
+*   **Rework Issues**: Locate rows in the opportunities matrix where `Rework Rate` spikes, which signifies high waste and low standard-operating-procedure (SOP) compliance.
+*   **Resource Utilization Gaps**: Review the bottlenecks table. Operators displaying high cycle times but low output volumes represent idle capacity or training gaps.
+*   **SLA Compliance Deviations**: Sift through the **SLA compliance curve** weekly. Any downward spikes indicate a process deviation or system outage.
+
+---
+
+## 10. Derived Business Insights & Strategic Planning
+
+By analyzing the 105k process logs, the operational excellence team has derived the following insights:
+
+*   **SLA Bottleneck Zones**: **Customer Onboarding** represents our largest delivery risk, with SLA achievement lagging at **43.4%** due to alphabetical routing constraints overloading specific CS agents.
+*   **Finance Q4 Volume Spikes**: typists transcribing invoices manually under high Q4 volumes caused error rates to spike to **12.5%** and rework costs to add **$75 per invoice**.
+*   **Operations Weekend Spikes**: Fulfillment cycle times surge on Fridays/Saturdays by **85%** due to warehouse shift staffing deficits, driving a **25% complaint surge**.
+*   **ROI Projections**: OCR RPA tools for Finance configuration saves **$450,000/year** (275% ROI); dynamic CRM routing for CS saves client churn (180% ROI); warehouse shift realignments save **$220,000/year** (633% ROI).
+*   **Strategic Planning Recommendations**:
+    1. Deploy OCR and automated ingestion scripts to eliminate typing errors.
+    2. Transition CS to dynamic workload-based routing rather than alphabetical routing.
+    3. Realign shift schedules to add capacity on Friday/Saturday order volume spikes.
+    4. Implement the **PDCA cycle** and monitor weekly KPI deviation trends.
