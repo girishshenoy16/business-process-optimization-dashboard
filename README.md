@@ -4,7 +4,7 @@
 💻 **Interactive Portal**: [Explore Live Dashboard (GitHub Pages)](https://your-username.github.io/business-process-optimization/)  
 📂 **Executive Deliverable**: [Strategic Process Improvement Report (Markdown)](reports/business_analysis_report.md)
 
-![ProcessOptima Dashboard Showcase](dashboard/dashboard%20image.png)
+![ProcessOptima Dashboard Showcase](dashboard/dashboard_image.png)
 
 ---
 
