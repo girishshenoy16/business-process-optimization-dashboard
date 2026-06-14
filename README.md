@@ -50,6 +50,7 @@ The analysis uses a generated database of **105,000+ process log entries** spann
 Below is the directory layout for this repository:
 
 ```text
+business-process-optimization-dashboard/
 ├── requirements.txt                    # Python package dependencies
 ├── .gitignore                          # Git ignore configuration
 ├── index.html                          # Root redirect to the dashboard for GitHub Pages
