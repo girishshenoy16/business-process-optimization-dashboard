@@ -762,11 +762,11 @@ function renderDeptChart(filteredProcs) {
                 }
             },
             scales: {
-                x: { grid: { display: false }, ticks: { font: { family: 'Inter', size: 10 } } },
+                x: { grid: { display: false }, ticks: { font: { family: 'Inter', size: 13 } } },
                 y: { 
                     border: { dash: [4, 4] },
-                    ticks: { font: { family: 'Inter', size: 10 } },
-                    title: { display: true, text: 'Hours', font: { family: 'Inter', size: 11, weight: 'bold' } }
+                    ticks: { font: { family: 'Inter', size: 13 } },
+                    title: { display: true, text: 'Hours', font: { family: 'Inter', size: 13, weight: 'bold' } }
                 }
             }
         }
@@ -814,7 +814,7 @@ function renderCostChart(filteredProcs) {
             plugins: {
                 legend: {
                     position: 'bottom',
-                    labels: { boxWidth: 10, font: { family: 'Inter', size: 9 } }
+                    labels: { boxWidth: 14, padding: 16, font: { family: 'Inter', size: 13, weight: '500' } }
                 }
             },
             cutout: '60%'
@@ -882,25 +882,25 @@ function renderTrendChart() {
             plugins: {
                 legend: {
                     position: 'top',
-                    labels: { boxWidth: 12, font: { family: 'Inter', size: 10 } }
+                    labels: { boxWidth: 14, padding: 16, font: { family: 'Inter', size: 13, weight: '500' } }
                 }
             },
             scales: {
-                x: { grid: { display: false }, ticks: { font: { family: 'Inter', size: 9 } } },
+                x: { grid: { display: false }, ticks: { font: { family: 'Inter', size: 13 } } },
                 ySLA: {
                     type: 'linear',
                     position: 'left',
                     max: 100,
                     min: 0,
-                    ticks: { font: { family: 'Inter', size: 9 }, callback: (v) => `${v}%` },
-                    title: { display: true, text: 'SLA Compliance %', font: { family: 'Inter', size: 10, weight: 'bold' } }
+                    ticks: { font: { family: 'Inter', size: 13 }, callback: (v) => `${v}%` },
+                    title: { display: true, text: 'SLA Compliance %', font: { family: 'Inter', size: 13, weight: 'bold' } }
                 },
                 yCost: {
                     type: 'linear',
                     position: 'right',
                     grid: { display: false },
-                    ticks: { font: { family: 'Inter', size: 9 }, callback: (v) => isValidNum(v) ? `$${(safeNum(v)/1000).toFixed(0)}K` : "$0K" },
-                    title: { display: true, text: 'Monthly Cost ($)', font: { family: 'Inter', size: 10, weight: 'bold' } }
+                    ticks: { font: { family: 'Inter', size: 13 }, callback: (v) => isValidNum(v) ? `$${(safeNum(v)/1000).toFixed(0)}K` : "$0K" },
+                    title: { display: true, text: 'Monthly Cost ($)', font: { family: 'Inter', size: 13, weight: 'bold' } }
                 }
             }
         }
